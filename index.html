@@ -4,62 +4,75 @@
   <title>QuibblePost</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link type="text/css" rel="stylesheet" href="styles.css"/>
   <link type="text/css" rel="stylesheet" href="normalize.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div id="wrapper">
-	    <div id="header">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Topics</a>
-                <div class="dropdown-content">
-                    <a href="celebs.html">Celebrities</a>
-                    <a href="misc.html">Miscellaneous</a>
-                    <a href="politics.html">Politics</a>
-                    <a href="sports.html">Sports</a>
-                </div>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">QuibblePost</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Topics<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="celebs.html">Celebrities</a></li>
+          <li><a href="misc.html">Miscellaneous</a></li>
+          <li><a href="politics.html">Politics</a></li>
+          <li><a href="sports.html">Sports</a></li>
         </ul>
-	    </div>
-    </div>
-<!--
-<div class="jumbotron text-center">
-  <h1>Quibble Post</h1>
-  <p>Nitpicking Accross The Web</p> 
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron text-center" style="font-family:comic sans ms">
+  <h1><b>QuibblePost</b></h1>
+  <p><i>Nitpicking Accross The Web</i></p> 
 </div>
-<div class="container-fluid">
-    <div class="row-fluid">
-        <div class="col-sm-3">
-            <img src="http://akns-images.eonline.com/eol_images/Entire_Site/2015515/rs_560x415-150615092637-1024-tom-brady-rings.ls.61515.jpg" width="350" height="250" style="width:100%">
-            <a href="sports.html"><h3>Sports</h3></a>
-            <p>Bashing athletes is as American as apple pie. Stick it to them with a well thought out rant on our sports page!</p>
-        </div>
-        <div class="col-sm-3">
-            <img src="https://i.ytimg.com/vi/1H3fLAyVEOc/hqdefault.jpg" width="350" height="250" style="width:100%">
-    		<a href="celebs.html"><h3>Celebrities</h3></a>
-    		<p>Everybody hates celebrities and ripping them online is the easiest way to let them know how much you despise them</p>
-        </div>
+<div class="row" style="text-align: center">
+  <div class="col-sm-6 col-md-5" style="display:inline-block; float:none; text-align:left; margin-right:-4px; max-width:320px">
+    <div class="thumbnail">
+      <img src="http://akns-images.eonline.com/eol_images/Entire_Site/2015515/rs_560x415-150615092637-1024-tom-brady-rings.ls.61515.jpg">
+      <div class="caption">
+        <a href="sports.html"><h3>Sports</h3></a>
+        <p>Bashing athletes is as American as apple pie. Stick it to them with a well thought out rant on our sports page!</p>
+      </div>
     </div>
-    <div class="row-fluid">
-        <div class="col-sm-3">
-            <img src="http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg" width="350" height="250" style="width:100%">
-    		<a href="politics.html"><h3>Politics</h3></a>
-    		<p>If you are looking for a topic sure to encite rage, look no further than our politics page</p>
-        </div>
-        <div class="col-sm-3">
-            <img src="http://www.wamitab.org.uk/useruploads/images/istock_question_man_small.jpg" width="350" height="250" style="width:100%">
-    		<a href="misc.html"><h3>Miscellaneous</h3></a>
-    		<p>Nonsensical arguments about trivial situations should never be contained within one topic. If your looking for adventurious complaints this category is just what you need!</p>
-        </div>
+  </div>
+  <div class="col-sm-6 col-md-5" style="display:inline-block; float:none; text-align:left; margin-right:-4px; max-width:320px">
+    <div class="thumbnail">
+      <img src="https://i.ytimg.com/vi/1H3fLAyVEOc/hqdefault.jpg">
+      <div class="caption">
+        <a href="celebs.html"><h3>Celebrities</h3></a>
+        <p>Everybody hates celebrities and ripping them online is the easiest way to let them know how much you despise them</p>
+      </div>
     </div>
+  </div>
+  <div class="col-sm-6 col-md-5" style="display:inline-block; float:none; text-align:left; margin-right:-4px; max-width:320px">
+    <div class="thumbnail">
+      <img src="http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg">
+      <div class="caption">
+        <a href="politics.html"><h3>Politics</h3></a>
+        <p>If you are looking for a topic sure to encite rage, look no further than our politics page</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-5" style="display:inline-block; float:none; text-align:left; margin-right:-4px; max-width:320px">
+    <div class="thumbnail">
+      <img src="http://www.wamitab.org.uk/useruploads/images/istock_question_man_small.jpg">
+      <div class="caption">
+        <a href="misc.html"><h3>Miscellaneous</h3></a>
+        <p>Nonsensical arguments about trivial situations should never be contained within one topic. If your looking for adventurious complaints this category is just what you need!</p>
+      </div>
+    </div>
+  </div>
 </div>
--->
+<br><br>
+<div class="panel-footer">&copy QuibblePost 2016</div>
 </body>
 </html>
