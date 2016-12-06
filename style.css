@@ -92,6 +92,13 @@ p {
 	color: #acd1b2;
 }
 
+#container {
+	width: 1000px;
+	overflow: hidden;
+	margin: 50px auto;
+	background: white;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -105,14 +112,6 @@ li {
 }
 
 li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -149,11 +148,3 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-#container {
-	width: 1000px;
-	overflow: hidden;
-	margin: 50px auto;
-	background: white;
-}
-
